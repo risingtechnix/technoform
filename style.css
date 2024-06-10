@@ -90,7 +90,7 @@ html {
 .header {
 	background-color: #922626;
 	color: #fff;
-	padding: 20px 0;
+	padding: 5px 0;
 }
 
 .header .container {
@@ -110,6 +110,7 @@ html {
 .logo {
 	height: 60px;
 	margin-right: 15px;
+	border-radius: 10px;
 }
 
 .logoText {
@@ -231,7 +232,7 @@ nav ul li a:hover {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	background-color: rgba(0, 61, 97, 0.8);
+	background-color: #922626;
 	color: #fff;
 	border: none;
 	padding: 10px;
@@ -242,7 +243,8 @@ nav ul li a:hover {
 }
 
 .slider-button:hover {
-	background-color: #922626;
+	background-color: #ccc;
+	color: #922626;
 }
 
 .prev-button {
@@ -261,6 +263,7 @@ nav ul li a:hover {
 
 	.slider-button {
 		padding: 8px;
+		;
 	}
 }
 
@@ -271,25 +274,28 @@ nav ul li a:hover {
 
 	.slider-button {
 		padding: 5px;
+
 	}
 }
 
 /* Who we are */
 
 .who-we-are {
-	max-width: 800px;
+	max-width: 100%;
 	margin: 0 auto;
+	margin-top: 30px;
 	padding: 20px;
 	text-align: center;
-	font-family: "Arial", sans-serif;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	color: #333;
+	background-color: #f2f2f2;
 }
 
 .section-title {
 	font-size: 2.5em;
 	font-weight: 700;
 	margin-bottom: 20px;
-	color: #222;
+	color: #922626;
 }
 
 .intro-text,
@@ -322,6 +328,10 @@ nav ul li a:hover {
 	}
 }
 
+
+/* Header Line */
+
+
 /* Services Section Styling */
 .services {
 	background-color: #f2f2f2;
@@ -332,6 +342,7 @@ nav ul li a:hover {
 
 .service-heading {
 	font-size: 32px;
+	margin-top: -10px;
 	color: #922626;
 	margin-bottom: 30px;
 }
@@ -362,6 +373,8 @@ nav ul li a:hover {
 	height: auto;
 	border-bottom: 2px solid #922626;
 	margin-bottom: 15px;
+	border: 2px solid #922626;
+	border-radius: 10px;
 }
 
 .service-title {
@@ -382,7 +395,7 @@ nav ul li a:hover {
 
 /* Certifications Section Styling */
 .certifications {
-	background-color: #e6e6e6; /* Slightly different background */
+	background-color: #f2f2f2; /* Slightly different background */
 	padding: 40px 20px;
 	text-align: center;
 	margin-top: 50px;
@@ -444,7 +457,7 @@ nav ul li a:hover {
 
 /* Clients Section Styling */
 .clients {
-	background-color: #f9f9f9;
+	background-color: #f2f2f2;
 	padding: 40px 20px;
 	text-align: center;
 	margin-top: 50px;
@@ -486,13 +499,16 @@ nav ul li a:hover {
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+
+
+
 /* Contact Form Styling */
 .contact-form {
 	background-color: #f2f2f2;
 	padding: 20px;
 	border-radius: 8px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-	max-width: 800px;
+	width: 80%;
 	margin: 0 auto;
 	margin-top: 50px;
 	font-family: Arial, sans-serif;
@@ -500,8 +516,11 @@ nav ul li a:hover {
 
 .contact-form-heading {
 	text-align: center;
-	font-size: 24px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 32px;
 	margin-bottom: 20px;
+	
+	color: #922626;
 }
 
 .contact-form-container {
@@ -523,10 +542,11 @@ nav ul li a:hover {
 	display: block;
 	margin-bottom: 5px;
 	font-weight: bold;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact-form-input {
-	width: 100%;
+	width: 90%;
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -548,6 +568,7 @@ nav ul li a:hover {
 	color: #fff;
 	font-size: 16px;
 	cursor: pointer;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	text-align: center;
 }
 
@@ -558,10 +579,11 @@ nav ul li a:hover {
 /* Footer Styling */
 .footer {
 	background-color: #f2f2f2;
-	padding: 40px 20px;
+	padding-top: 40px 20px;
 	border-top: 2px solid #922626;
 	font-family: Arial, sans-serif;
 	margin-top: 100px;
+	margin-bottom: 0;
 }
 
 .upper-footer-container {
@@ -586,29 +608,42 @@ nav ul li a:hover {
 	font-size: 24px;
 	margin-bottom: 10px;
 	color: #922626;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+
 
 .footer-about {
 	display: flex;
-	align-items: center;
+	flex-direction: column;
 }
 
 .footer-logo {
-	width: 60px;
-	height: auto;
+	width: 90px;
+	height: 50px;
 	margin-right: 10px;
+	
 }
 
 .footer-about-text {
 	color: #922626;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer-about-para {
-	margin: 0;
+	margin: 0 5px;
+	margin-top: 5px;
+	font-size: 17px;
+	margin-right: 10px;
+	width: 320px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .footer-company-name {
 	font-weight: bold;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer-helpful-link-list-container {
@@ -618,13 +653,14 @@ nav ul li a:hover {
 }
 
 .footer-helpful-link-list-container li {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .footer-link {
 	text-decoration: none;
 	color: #922626;
 	font-weight: bold;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer-link:hover {
@@ -634,6 +670,7 @@ nav ul li a:hover {
 .footer-mailing-address {
 	color: #922626;
 	margin: 0 0 10px 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer-mailing-address-emails-container {
@@ -644,15 +681,18 @@ nav ul li a:hover {
 	margin: 0 0 5px 0;
 	font-size: 18px;
 	color: #922626;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer-email {
 	margin: 0;
 	color: #922626;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .lower-footer-container {
 	text-align: center;
+	margin-bottom: 0;
 	padding: 10px 0;
 	background-color: #922626;
 	color: #fff;
