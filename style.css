@@ -147,19 +147,20 @@ nav ul li a:hover {
 }
 
 .headerBtn {
-	background-color: #f9c846;
-	color: #003d61;
+	background-color: #f2f2f2;
+	color: #D5211B;
 	border: none;
 	border-radius: 12px;
 	padding: 10px 20px;
-	font-size: 16px;
+	font-size: 18px;
 	cursor: pointer;
 	margin-left: 15px;
 	transition: background-color 0.3s, transform 0.3s;
 }
 
 .headerBtn:hover {
-	background-color: #fff;
+	background-color: #e66561;
+	color: #f2f2f2;
 	transform: scale(1.05);
 }
 
@@ -194,6 +195,7 @@ nav ul li a:hover {
 	}
 
 	.headerBtn {
+		background-color: #D5211B;
 		width: 100%;
 		margin: 10px 0;
 	}
@@ -943,4 +945,57 @@ nav ul li a:hover {
 		margin-right: 10px;
 		min-width: 200px;
 	}
+}
+
+
+/* About Us page */
+.About-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: #922626;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.About-section {
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.About-section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+	text-align: center;
+}
+
+ul {
+    padding-left: 10px;
+}
+
+ul li {
+    margin-bottom: 14px;
+}
+
+@media (min-width: 768px) {
+    .About-container {
+        flex-direction: row;
+    }
+
+    .About-section {
+        flex: 1;
+        border-right: 1px solid #fff;
+    }
+
+    .About-section:last-child {
+        border-right: none;
+    }
 }
