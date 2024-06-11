@@ -214,7 +214,7 @@ nav ul li a:hover {
 /* Slider */
 .slider {
 	display: flex;
-	transition: transform 0.5s ease;
+	transition: transform 1s ease;
 	margin-top: 10px;
 }
 
@@ -224,6 +224,7 @@ nav ul li a:hover {
 	height: 525px;
 	object-fit: contain;
 	flex: 0 0 auto;
+	z-index: -1;
 	border-radius: 10px;
 }
 
@@ -253,6 +254,28 @@ nav ul li a:hover {
 
 .next-button {
 	right: 10px;
+}
+
+
+.slider-description {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    font-size: 24px;
+    text-align: center;
+    z-index: 5;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .slider-description {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
 }
 
 /* Responsive Design */
@@ -750,19 +773,17 @@ nav ul li a:hover {
 	}
 }
 
-/*Sofiyan change nav add page*/
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    top: 60px; /* Adjust this value to move the dropdown lower */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add transition */
+    opacity: 0; /* Initially hide the dropdown */
+    transform: translateY(-10px); /* Move the dropdown up */
 }
 
 .dropdown-content a {
@@ -770,7 +791,7 @@ nav ul li a:hover {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    transition: background-color 0.3s; /* Add transition */
 }
 
 .dropdown-content a:hover {
@@ -779,7 +800,19 @@ nav ul li a:hover {
 
 .dropdown:hover .dropdown-content {
     display: block;
+    opacity: 1; /* Show the dropdown */
+    transform: translateY(0); /* Move the dropdown to its original position */
 }
+
+.dropdown-content a.hoverScale {
+    transition: transform 0.3s; /* Add transition */
+}
+
+.dropdown-content a.hoverScale:hover {
+    transform: scale(1.2); /* Scale up by 20% on hover */
+}
+
+
 
 /* Container for image and information */
 .image-info-container {
@@ -858,4 +891,23 @@ nav ul li a:hover {
 .category ul {
     margin-top: 0; /* Remove default margin */
     padding-left: 20px; /* Add left padding for list items */
+}
+
+@media (max-width:480px){
+	.image-info-container{
+		flex-direction: column;
+		align-items: center;
+	}
+	.image-info-container img{
+		width: 250px;
+		height: 150px;
+		border: 3px solid #922626;
+		border-radius: 5px;
+		margin-bottom: 10px;
+	}
+	.category{
+		margin-right: 10px;
+		min-width: 200px;
+	}
+	
 }
