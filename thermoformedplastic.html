@@ -4,16 +4,20 @@
       <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Sri Hari Packaging Industries Pvt. Ltd.</title>
+            <title>Technoform Industries Pvt. Ltd.</title>
             <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+                  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+                  crossorigin="anonymous" referrerpolicy="no-referrer" />
       </head>
+
 
       <body>
             <header class="header">
                   <div class="container">
                         <div class="logoDiv">
-                              <img class="logo" src="./assets/Logo.png" alt="Sri Hari Packaging Industries Pvt. Ltd.">
-                              <p class="logoText">Techoform Industries</p>
+                              <img class="logo" src="./assets/Logo.png" alt="Technoform Industries Pvt. Ltd.">
+                              <p class="logoText">Technoform Industries</p>
                         </div>
                         <nav>
                               <ul>
@@ -28,20 +32,20 @@
                                               <li><a href="#product2">Thermoformed Plastic Packaging</a></li>
                                               <li><a href="#product3">Thermoformed Raid Prototyping Projects</a></li>
                                               <li><a href="./customisedproduct.html">Customised Products</a></li>
+
                                           </ul>
-                                      </li>
-                                   
+                                    </li>
+                                    <li class="hoverScale"><a href="./aboutUs.html">About us</a></li>
                               </ul>
                         </nav>
                         <div class="contact">
-                              <a href="" style="text-decoration: none;" class="conBtn headerBtn hoverScale">Contact
+                              <a href="./contact.html" style="text-decoration: none;"
+                                    class="conBtn headerBtn hoverScale">Contact
                                     us</a>
-                              <button id="open-popup-btn" class="open-popup-btn enqBtn headerBtn hoverScale">Enquire
-                                    now</button>
+                              <a href="#contact-form" style="text-decoration: none;"
+                                    class="conBtn headerBtn hoverScale">Enquire now</a>
                         </div>
                   </div>
-
-
             </header>
 
             <main>
@@ -123,39 +127,9 @@
                               </div>
                         </div>
                   </div>
-
-
-                  <!-- Contact us form -->
-                  <!-- popup form -->
-                  <div id="popup-form" class="popup-form">
-                        <div class="popup-content">
-                              <span class="close-btn">&times;</span>
-                              <h2 class="contact-form-heading">Contact Us</h2>
-                              <form id="contact-form" class="contact-form-container">
-                                    <div class="contact-form-input-container">
-                                          <label for="name" class="contact-form-label">Name</label>
-                                          <input type="text" name="name" id="name" class="contact-form-input" required>
-                                    </div>
-                                    <div class="contact-form-input-container">
-                                          <label for="email" class="contact-form-label">Email</label>
-                                          <input type="email" name="email" id="email" class="contact-form-input"
-                                                required>
-                                    </div>
-                                    <div class="contact-form-input-container">
-                                          <label for="phone" class="contact-form-label">Phone</label>
-                                          <input type="tel" name="phone" id="phone" class="contact-form-input" required>
-                                    </div>
-                                    <div class="contact-form-input-container full-width">
-                                          <label for="message" class="contact-form-label">Message</label>
-                                          <textarea name="message" id="message" class="contact-form-input"
-                                                required></textarea>
-                                    </div>
-                                    <button type="submit" class="contact-form-submit">Submit</button>
-                              </form>
-                        </div>
-                  </div>
-
             </main>
+            
+            <!-- Footer -->
 
             <footer class="footer">
                   <div class="upper-footer-container">
@@ -203,7 +177,6 @@
 
             <script src="./script.js"></script>
             <script src="https://smtpjs.com/v3/smtp.js"></script>
-
       </body>
 
 </html>
