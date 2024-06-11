@@ -24,6 +24,21 @@ document.addEventListener("DOMContentLoaded", function () {
 	}, 3000) // Automatically slide every 3 seconds
 })
 
+
+function openModal(image) {
+    var modal = document.getElementById("modal");
+    var modalImage = document.getElementById("modal-image");
+    var modalDescription = document.getElementById("modal-description");
+
+    modal.style.display = "flex";
+    modalImage.src = image.src;
+    modalDescription.innerHTML = image.alt;
+}
+
+function closeModal() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "none";
+}
 // popup
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -97,3 +112,4 @@ document
 		var message = document.getElementById("message").value
 		submitForm(name, email, phone, message)
 	})
+
