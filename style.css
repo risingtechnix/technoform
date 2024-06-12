@@ -668,6 +668,8 @@ nav ul li a:hover {
 	flex: 1;
 	min-width: 280px;
 	margin-bottom: 20px;
+	text-align: center;
+	line-height: 25px;
 }
 
 /* Adding Location to footer */
@@ -691,6 +693,7 @@ nav ul li a:hover {
 .footer-about {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .footer-logo {
@@ -702,6 +705,7 @@ nav ul li a:hover {
 .footer-about-text {
 	color: #922626;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-align: start;
 }
 
 .footer-about-para {
@@ -719,6 +723,7 @@ nav ul li a:hover {
 }
 
 .footer-helpful-link-list-container {
+	text-align: center;
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -750,7 +755,7 @@ nav ul li a:hover {
 }
 
 .footer-email-heading {
-	margin: 0 0 5px 0;
+	margin: 10px 0 5px 0;
 	font-size: 18px;
 	color: #922626;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
