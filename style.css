@@ -929,6 +929,14 @@ nav ul li a:hover {
 	padding-left: 20px; /* Add left padding for list items */
 }
 
+.image-info-container img {
+	width: 600px;
+	height: 550px;
+	border: 3px solid #922626;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
 @media (max-width: 480px) {
 	.image-info-container {
 		flex-direction: column;
@@ -1249,4 +1257,10 @@ ul li {
         border-right: none;
     }
 }
+/* Thermoformed plastic packaging */
+.plasticPackagingImg{
+	border: 2px solid #D5211B;
+	border-radius: 5px;
+}
+
 
