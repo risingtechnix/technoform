@@ -195,7 +195,9 @@ nav ul li a:hover {
 	}
 
 	.headerBtn {
-		background-color: #D5211B;
+		text-align: center;
+		background-color: #f2f2f2;
+		color: #D5211B;
 		width: 100%;
 		margin: 10px 0;
 	}
@@ -668,6 +670,15 @@ nav ul li a:hover {
 	margin-bottom: 20px;
 }
 
+/* Adding Location to footer */
+.location{
+	text-decoration: none;
+	background-color: #922626;
+	color: #ffffff;
+	padding: 8px;
+	border-radius: 5px;
+}
+
 .footer-about-heading,
 .footer-helpful-links-heading,
 .footer-mailing-address-heading {
@@ -1125,6 +1136,7 @@ nav ul li a:hover {
 	flex-wrap: wrap;
 	justify-content: space-between;
   }
+
   
   .feature-item {
 	width: 23%;
@@ -1261,6 +1273,63 @@ ul li {
 .plasticPackagingImg{
 	border: 2px solid #D5211B;
 	border-radius: 5px;
+}
+
+/* About us */
+
+.About-Autohrities-container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #f2f2f2;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	color: #922626;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.team-member {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 20px;
+}
+
+.team-member img {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.team-member h1 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.team-member h3{
+	font-size: 20px;
+}
+
+.team-member p {
+	margin: 0;
+	font-size: 20px;
+}
+
+@media (max-width: 768px) {
+	.team-member {
+		margin: 10px;
+	}
+
+	.team-member img {
+		width: 150px;
+		height: 150px;
+	}
 }
 
 
